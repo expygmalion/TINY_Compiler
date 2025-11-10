@@ -1,0 +1,24 @@
+﻿ ### Tokens for Language Compiler
+ 
+   Reserved: {T_INT, T_FLOAT, T_STRING_KEY, T_READ, T_WRITE, T_REPEAT, T_UNTIL, T_IF, T_ELSEIF, T_ELSE, T_THEN, T_RETURN,
+ T_ENDL, T_MAIN }
+ 
+ Double char operators: { T_ASSIGN, T_NOTEQUAL, T_AND, T_OR}
+ 
+ Identifiers and Literals: { T_NUMBER, T_IDENTIFIER, T_STRING } 
+ 
+ Single char operator: { T_PLUS, T_MINUS,
+ T_TIMES, T_DIVIDE, T_LESSTHAN, T_GREATERTHAN, T_EQUAL, T_LPAREN, T_RPAREN, T_LCURLY, T_RCURLY, T_COMMA, T_SEMICOLON
+ } 
+ 
+ Ignored: {COMMENT, WHITESPACE}
+ 
+ ### Regular Expressions for Tokens
+
+  { (int), (float), (string), (read), (write), (repeat), (until), (if), (elseif), (else), (then), (return), (endl), (main)
+ } { (:=), (<>), (&&), (||) } { ([0-9]+(\.[0-9]+)?), (([a-z]|[A-Z])([a-z]|[A-Z]|[0-9])*), ("[ˆ"]*") } { (\+), (-),
+ (\*), (/), (<), (>), (=), (\(), (\)), ({), (}), (,), (;) } { (/\*.*?\*/), ([ \t\n˚ ]+) }
+
+ ### Token Classes: 
+
+  Identifier
